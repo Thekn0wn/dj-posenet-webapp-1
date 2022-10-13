@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    background: url(background.jpg);
+    height: 100vh;
+}
+
+#heading {
+    color: white;
+    background-color: #2b3471;
+    border-radius: 10px;
+    padding: 20px 50px;
+    transition: all 0.3s;
+}
+
+#disk1 {
+    transform: translateX(-765px);
+    width: 200px;
+}
+
+#disk2 {
+    transform: translateX(800px);
+    width: 200px;
+}
+
+img {
+    border-radius: 100px;
+    transition: all 0.3s;
+}
+
+#volume,
+#speed,
+#play1 {
+    transform: translateY(0px);
+    color: white;
+    background-color: #1aa391;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0px 20px;
+    transition: all 0.3s;
+
+}
+
+#volume {
+    float: right;
+}
+
+#speed {
+    float: left;
+}
+
+#heading:hover {
+    background-color: #115d97;
+    cursor: pointer;
+}
+
+#volume:hover,
+#speed:hover,
+#play1:hover {
+    background-color: #2ea823;
+    cursor: pointer;
+}
+
+#disk1:hover,
+#disk2:hover {
+    width: 250px;
+    cursor: pointer;
+}
+
+canvas {
+    border: 5px solid white;
+    border-radius: 20px;
+}
